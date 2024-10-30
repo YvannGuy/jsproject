@@ -40,11 +40,20 @@ const Weather = () => {
 
     // Function to search for weather data for a specific city
     const search = async (city) => {
+        if (city === ""){
+            alert("Enter city Name");
+            return;
+        }
         try {
             // Construct the API URL using the searched city and the API key
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
             const response = await fetch(url); // Request to the API
             const data = await response.json(); // Convert response to JSON
+
+            if(!response.ok){
+                alert(data.message);
+                return;
+            }
             console.log(data); // Log data for debugging
 
             // Select the appropriate weather icon or use a default icon
@@ -59,7 +68,8 @@ const Weather = () => {
                 icon: icon // Icon added for displaying the weather icon
             });
         } catch (error) {
-            console.log(error); // Handle errors in case of an issue with the request
+            setWeatherData(false)
+            console.log("error in fetching weather data"); // Handle errors in case of an issue with the request
         }
     };
 
