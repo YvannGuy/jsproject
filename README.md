@@ -25,8 +25,8 @@ To run locally:
 
 1. **Prerequisites**: Install **Node.js** (v14+) and **npm**.
 2. **Clone and Install**:
-   - Clone the repo: `git clone https://github.com/YvannGuy/jsproject`
-   - Navigate to the project directory: `cd jsproject`
+   - Clone the repo: `git clone https://github.com/YvannGuy/weather-app-react-vite`
+   - Navigate to the project directory: `cd weather-app-react-vite`
    - Install dependencies: `npm install`
 3. **Setup**: Create a `.env` file in the root and add your API key:
    - `VITE_APP_ID=your_api_key_here`
