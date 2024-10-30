@@ -29,7 +29,8 @@ To run locally:
    - Navigate to the project directory: `cd jsproject`
    - Install dependencies: `npm install`
 3. **Setup**: Create a `.env` file in the root and add your API key:
-   - `REACT_APP_WEATHER_API_KEY=your_api_key_here`
+   - `VITE_APP_ID=e26ca1c66ef7318a69454d2fc4b6bb0a
+`
 4. **Run the App**: Start the server with `npm run dev` and open `http://localhost:3000`.
 
 ## Usage
