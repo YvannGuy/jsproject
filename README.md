@@ -30,7 +30,7 @@ To run locally:
    - Install dependencies: `npm install`
 3. **Setup**: Create a `.env` file in the root and add your API key:
    - `VITE_APP_ID=your_api_key_here`
-4. **Run the App**: Start the server with `npm run dev` and open `http://localhost:3000`.
+4. **Run the App**: Start the server with `npm run dev` and open `http://localhost:5173`.
 
 ## Usage
 
