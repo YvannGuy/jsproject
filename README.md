@@ -1,4 +1,4 @@
-**![Weather App Preview](https://example.com/path/to/your/image.png)**
+**![Weather App Preview](src/assets/weatherimg.png)**
 
 # Weather App 🌦️
 
